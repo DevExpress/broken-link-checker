@@ -316,6 +316,8 @@ describe("INTERNAL -- checkUrl", function()
 	
 	describe("shall be broken with a REAL HOST and FAKE PATH from", function()
 	{
+		this.timeout(10000);
+
 		it("an absolute url", function()
 		{
 			return checkUrl(
@@ -580,6 +582,8 @@ describe("INTERNAL -- checkUrl", function()
 	// and faster than testing a remote http://asdf1234.asdf1234
 	describe("shall be broken and have error with a FAKE HOST from", function()
 	{
+		this.timeout(10000);
+
 		it("an absolute url", function()
 		{
 			return checkUrl(
@@ -835,6 +839,8 @@ describe("INTERNAL -- checkUrl", function()
 	
 	describe("shall be broken and have error with NO HOST from", function()
 	{
+		this.timeout(10000);
+
 		it("an absolute url", function()
 		{
 			return checkUrl(

@@ -8,7 +8,7 @@ var expect = require("chai").expect;
 
 var conn;
 
-
+process.on('unhandledRejection', e => console.log(e));
 
 describe("PUBLIC -- HtmlUrlChecker", function()
 {

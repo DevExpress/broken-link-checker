@@ -7,8 +7,6 @@ var expect = require("chai").expect;
 
 var conn;
 
-
-
 describe("PUBLIC -- UrlChecker", function()
 {
 	before( function()
@@ -200,12 +198,11 @@ describe("PUBLIC -- UrlChecker", function()
 			{
 				link: function(result, customData)
 				{
-					if (result.http.response._cached === true)
+					if (result.http.cached === true)
 					{
 						success = true;
 					}
 					
-					result.http.response._cached = true;
 					results[customData.index] = result;
 				},
 				end: function()
@@ -233,12 +230,11 @@ describe("PUBLIC -- UrlChecker", function()
 			{
 				link: function(result, customData)
 				{
-					if (result.http.response._cached === true)
+					if (result.http.cached === true)
 					{
 						done( new Error("this should not have been a cached result") );
 					}
 					
-					result.http.response._cached = true;
 					results[customData.index] = result;
 				},
 				end: function()
@@ -273,12 +269,11 @@ describe("PUBLIC -- UrlChecker", function()
 			{
 				link: function(result, customData)
 				{
-					if (result.http.response._cached === true)
+					if (result.http.cached === true)
 					{
 						done( new Error("this should not have been a cached result") );
 					}
 					
-					result.http.response._cached = true;
 					results[customData.index] = result;
 				},
 				end: function()
