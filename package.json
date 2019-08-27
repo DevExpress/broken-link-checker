@@ -1,7 +1,7 @@
 {
   "name": "@belym.a.2105/broken-link-checker",
   "description": "Find broken links, missing images, etc in your HTML.",
-  "version": "0.7.10-alpha.1",
+  "version": "0.7.10",
   "license": "MIT",
   "author": "Steven Vachon <contact@svachon.com> (https://www.svachon.com/)",
   "repository": "AndreyBelym/broken-link-checker",
