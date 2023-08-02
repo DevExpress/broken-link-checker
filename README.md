@@ -1,3 +1,6 @@
+# DEPREDCATED
+The TestCafe team no longer maintains the `broken-link-checker` repository.
+
 # broken-link-checker [![NPM Version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][david-image]][david-url]
 
 > Find broken links, missing images, etc in your HTML.
